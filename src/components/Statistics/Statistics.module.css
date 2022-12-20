@@ -15,7 +15,7 @@
   border-top-right-radius: 5px;
 }
 
-.stat-list {
+.statList {
   display: flex;
 }
 
@@ -34,12 +34,12 @@
   border-bottom-right-radius: 5px;
 }
 
-.item-label {
+.label {
   color: white;
   margin-bottom: 10px;
 }
 
-.item-percentage {
+.percentage {
   font-size: larger;
   font-weight: 600;
   color: white;

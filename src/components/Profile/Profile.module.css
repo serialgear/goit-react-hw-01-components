@@ -3,8 +3,7 @@
   background-color: white;
   border-radius: 5px;
   width: 300px;
-  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px,
-    rgb(0 0 0 / 14%) 0px 3px 4px 0px, rgb(0 0 0 / 12%) 0px 1px 8px 0px;
+  box-shadow: rgb(0 0 0 / 20%) 0px 3px 3px -2px;
 }
 
 .description {
@@ -24,10 +23,6 @@
 
 .name {
   margin-bottom: 10px;
-}
-
-.name,
-.quantity {
   font-weight: 600;
   font-size: larger;
 }
@@ -40,13 +35,32 @@
 .location,
 .label {
   color: #a1abb6;
-  font-weight: 500;
+  font-weight: 700;
 }
 
 .stats {
   display: flex;
+  background-color: darkgrey;
+  border: 1px solid darkslategray;
+  border-radius: 0 0 4px 4px;
+}
+.stats li {
+  flex-basis: 33.333333%;
+  padding: 8px;
 }
 
+.label {
+  display: flex;
+  justify-content: center;
+  color: gray;
+  margin-bottom: 8px;
+}
+.quantity {
+  display: flex;
+  justify-content: center;
+  font-weight: 600;
+  font-size: larger;
+}
 .list {
   display: flex;
   flex-direction: column;
