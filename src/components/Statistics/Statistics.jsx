@@ -22,14 +22,14 @@ export const Statistics = ({ title, stats }) => {
   );
 };
 Statistics.propTypes = {
-  title: PropTypes.string,
+  title: PropTypes.string.isRequired,
   stats: PropTypes.arrayOf(
     PropTypes.shape({
-      is: PropTypes.string,
-      label: PropTypes.string,
-      percentage: PropTypes.number,
-    })
-  ),
+      is: PropTypes.string.isRequired,
+      label: PropTypes.string.isRequired,
+      percentage: PropTypes.number.isRequired,
+    }).isRequired
+  ).isRequired,
 };
 
 function getRandomHexColor() {
